@@ -1,0 +1,25 @@
+# Radcliff_StudentInfoFormatter.
+[main (4).py](https://github.com/user-attachments/files/34666399/main.4.py)
+import datetime
+
+f = str(input("Enter first name: "))
+l = str(input("Enter last name: "))
+s = str(input("Enter section: "))
+fav = str(input("Enter favourite subject: "))
+
+first_name = f.strip()
+last_name = l.strip()
+section =  s.strip()
+fav_subject = fav.strip()
+
+full_name = (f + " " + l).title()
+namecode = full_name.upper()
+s = s.upper()
+fav = fav.title()
+
+print("\nFormatted output:")
+print("Name: ", full_name)
+print("Name Code: ", namecode)
+print("Section: ", section)
+print("Favourite Subject: ", fav_subject)
+print("Character count: ", len(full_name))
